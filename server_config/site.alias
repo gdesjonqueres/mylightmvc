@@ -1,0 +1,18 @@
+alias /mylightmvc /var/git/mylightmvc/public
+
+<Directory /var/git/mylightmvc/public>
+	Order deny,allow
+	Allow from all
+
+	AllowOverride None
+	
+	SetEnv APPLICATION_ENV "local"
+
+	RewriteEngine On
+	RewriteCond %{RESQUEST_FILENAME} -s [OR]
+	RewriteCond %{RESQUEST_FILENAME} -l [OR]
+	RewriteCond %{RESQUEST_FILENAME} -d
+	RewriteBase /mylightmvc
+	RewriteRule ^.*$ - [NC,L]
+	RewriteRule !\.(js|ico|txt|gif|jpg|png|css)$ index.php [NC,L]
+</Directory>

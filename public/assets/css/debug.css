@@ -1,0 +1,222 @@
+#debug {
+	width: 100%;
+	font-size: 12px;
+	text-align: left;
+	position: fixed;
+	bottom: 0px;
+	background: transparent;
+}
+
+#debug .toolbar {
+	width: 100%;
+	background: linear-gradient(45deg, #E8E8E8 0%, #D6D6D6 40%, #C6C6C6 100%) repeat scroll 0 0 transparent;
+	padding: 5px 0px;
+	border-top: 1px solid black;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-top-left-radius: 5px;
+	border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+#debug .toolbar:hover {
+	cursor: pointer;
+}
+#debug .toolbar .title {
+	font-size: 14px;
+	padding-left: 25px;
+	margin-left: 5px;
+}
+#debug .toolbar .closed {
+	background: url("../img/open.png") no-repeat scroll 0 0px transparent;
+}
+#debug .toolbar .open {
+	background: url("../img/close.png") no-repeat scroll 0 0px transparent;
+}
+
+#debug .toolbar .elapsed {
+	font-size: 12px;
+	padding-left: 25px;
+	margin-right: 5px;
+	position: absolute;
+	right: 0px;
+}
+
+#debug .dashboard {
+	height: 400px;
+	overflow: auto;
+	background: #eee;
+	display: none;
+	padding: 20px;
+	box-shadow: 0px 0px 5px 0px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-bottom-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#debug section {
+	float: left;
+	background: #fff;
+	padding-bottom: 20px;
+	box-shadow: 0px 0px 10px 0px;
+	margin-right: 100px;
+	margin-bottom: 50px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#mvc {
+	width: 400px;
+}
+#params {
+	width: 450px;
+}
+#session, #log {
+	width: 900px;
+}
+
+#debug header.closed {
+	/*background: url("../img/comptage/open_crit.png") no-repeat scroll 0 5px transparent;*/
+}
+#debug header.opened {
+	/*background: url("../img/comptage/close_crit.png") no-repeat scroll 0 5px transparent;*/
+}
+#debug header:hover {
+	cursor: pointer;
+}
+#debug section > header {
+	font-weight: bold;
+	font-size: 14px;
+	padding: 5px;
+	margin-bottom: 10px;
+	text-align: center;
+	background: linear-gradient(45deg, #E8E8E8 0%, #D6D6D6 40%, #C6C6C6 100%) repeat scroll 0 0 transparent;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-top-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+#debug article header {
+	font-weight: bold;
+	font-style: italic;
+	/*font-size: 12px;*/
+}
+
+#debug article {
+	padding-left: 20px;
+}
+#debug article .content {
+	padding: 20px;
+}
+#debug article .content {
+	display: none;
+	border-left: 1px solid black;
+}
+
+#route span {
+	font-style: italic;
+}
+#route span.module {
+	color: red;
+}
+#route span.controller {
+	color: blue;
+}
+#route span.action {
+	color: green;
+}
+
+#route .url {
+	font-style: italic;
+}
+#route .host {
+	font-weight: bold;
+}
+#route .uri {
+	color: black;
+}
+#route .url {
+	text-align: left;
+	font-size: 10px;
+}
+#route .args {
+	color: green;
+}
+#route .args .sep1 {
+	/*font-weight: bold;*/
+	color: red;
+}
+#route .args .sep2 {
+	/*font-weight: bold;*/
+	color: blue;
+}
+
+#log .entry {
+	border-bottom: 1px solid black;
+	margin-bottom: 5px;
+}
+#log .entry > span {
+	margin-right: 15px;
+}
+#log .entry .linenumber {
+	font-weight: bold;
+}
+#log .entry .infos {
+	font-style: italic;
+}
+#log .entry .type {
+	color: blue;
+}
+#log .entry div {
+	margin-left: 15px;
+	padding: 5px;
+}
+
+.sql, .dump {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 12px;
+	max-height: 300px;
+	overflow: auto;
+}
+
+/*.dump {
+	font-size: 10px;
+	max-height: 300px;
+	overflow: auto;
+}*/
+
+.dump .container {
+	color: red;
+	font-weight: bold;
+	font-style: normal;
+}
+.dump .pname {
+	color: blue;
+	font-weight: bold;
+}
+.dump .pvalue {
+	color: green;
+	font-style: italic;
+}
+
+.sql .keyword {
+	color: blue;
+	font-weight: bold;
+}
+.sql .operator {
+	color: red;
+}
+.sql .string {
+	color: green;
+	font-style: italic;
+}
+.sql .punctuation {
+	font-style: bold;
+	color: blue;
+}

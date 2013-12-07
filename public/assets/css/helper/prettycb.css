@@ -1,0 +1,28 @@
+@CHARSET "ISO-8859-1";
+
+label.prettyCheckbox span.holderWrap {
+	height: 14px;
+	top: 3px;
+}
+
+label.prettyCheckbox span.holder {
+	height: 40px;
+}
+
+label.radio span.holder {
+	background: url(../../img/helper/prettycb/small_radio.png) no-repeat;
+}
+
+label.checkbox span.holder {
+	background: url(../../img/helper/prettycb/small_checkbox.png) no-repeat;
+}
+
+/* Background position on mouseover */
+label.radio:hover span.holder, label.checkbox:hover span.holder {
+	top: -14px !important;
+}
+
+/* Background position when checked */
+label.checked span.holder, label.checked:hover span.holder {
+	top: -27px !important;
+}

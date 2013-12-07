@@ -1,0 +1,58 @@
+.myLightbox {
+    padding: 10px;
+    font-size: 12px;
+}
+.myLightbox label {
+    font-size: 12px;
+}
+.myLightbox h1 {
+    font-size: 16px;
+    margin: 0;
+    padding: 2px;
+    width: 200px;
+    line-height: 30px;
+    display:none;
+}
+.myLightbox p.description {
+    max-width: 500px;
+    font-style: italic;
+    text-align: left;
+}
+.myLightbox fieldset {
+    margin: 0 0 10px 0;
+    padding: 15px 15px 7px 15px;
+    position: relative;
+    -moz-box-shadow: 0px 0px 3px #aaa;
+    -webkit-box-shadow: 0px 0px 3px #aaa;
+    -o-box-shadow: 0px 0px 3px #aaa;
+    box-shadow: 0px 0px 3px #aaa;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.myLightbox fieldset legend {
+    font-size: 15px;
+}
+.myLightbox div.content {
+    margin-top: 5px;
+    padding: 5px;
+}
+.myLightbox .infos {
+    color: #888;
+    font-style: italic;
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+}
+
+.myLightbox textarea {
+    -moz-box-shadow: inset 0px 0px 3px #aaa;
+    -webkit-box-shadow: inset 0px 0px 3px #aaa;
+    -o-box-shadow: inset 0px 0px 3px #aaa;
+    box-shadow: inset 0px 0px 3px #aaa;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    background: linear-gradient(45deg, #E8E8E8 0%, #D6D6D6 40%, #C6C6C6 100%) repeat scroll 0 0 transparent;
+}

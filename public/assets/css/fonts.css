@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'DendaNewLightRegular';
+    src: url('../font/dendanewlight-webfont.eot');
+    src: url('../font/dendanewlight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/dendanewlight-webfont.woff') format('woff'),
+         url('../font/dendanewlight-webfont.ttf') format('truetype'),
+         url('../font/dendanewlight-webfont.svg#DendaNewLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DendaNewRegular';
+    src: url('../font/dendanew-webfont.eot');
+    src: url('../font/dendanew-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/dendanew-webfont.woff') format('woff'),
+         url('../font/dendanew-webfont.ttf') format('truetype'),
+         url('../font/dendanew-webfont.svg#DendaNewRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DendaNewBold';
+    src: url('../font/dendanew-bold-webfont.eot');
+    src: url('../font/dendanew-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/dendanew-bold-webfont.woff') format('woff'),
+         url('../font/dendanew-bold-webfont.ttf') format('truetype'),
+         url('../font/dendanew-bold-webfont.svg#DendaNewBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

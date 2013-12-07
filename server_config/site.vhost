@@ -1,0 +1,20 @@
+<VirtualHost *:80>
+	ServerName mylightmvc.local
+	DocumentRoot /var/git/mylightmvc/public
+
+	SetEnv APPLICATION_ENV "local"
+ 
+	<Directory "/var/git/mylightmvc/public">
+		Order deny,allow
+		Allow from all
+
+		AllowOverride None
+	</Directory>
+
+	RewriteEngine On
+	RewriteCond %{DOCUMENT_ROOT} -s [OR]
+	RewriteCond %{DOCUMENT_ROOT} -l [OR]
+	RewriteCond %{DOCUMENT_ROOT} -d
+	RewriteRule ^.*$ - [NC,L]
+	RewriteRule !\.(js|ico|txt|gif|jpg|png|css)$ index.php [NC,L]
+</VirtualHost>

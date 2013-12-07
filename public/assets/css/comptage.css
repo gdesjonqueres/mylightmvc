@@ -1,0 +1,592 @@
+@charset "utf-8";
+#corps_content {
+  margin-top: 15px;
+}
+.content_bg {
+  position: relative;
+  padding-top: 170px;
+}
+.ui-tooltip {
+  text-align: left;
+}
+/******************************************************************/
+
+/* ------------- */
+
+/* Menu CRITERES */
+
+/* ------------- */
+
+/* Libellé catégorie critère */
+
+#menu-criteres {
+    background: #545454;
+}
+#menu-criteres h2 {
+  color: white;
+  position: relative;
+  font-size: 14px;
+  background: #05c70a;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 5px;
+}
+#menu-criteres h2 .icon {
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  opacity: 0.8;
+}
+#menu-criteres h2 .title {
+  padding-left: 25px;
+}
+/* Liste de critères dans une catégorie */
+
+#menu-criteres > ul {
+  padding-left: 10px;
+}
+#menu-criteres a {
+    color: #05C70A;
+}
+/* Liste imrbriquée (modes de saisie) */
+
+#menu-criteres ul > li > ul {
+  padding-bottom: 5px;
+  display: none;
+}
+#menu-criteres li {
+  color: #fff;
+  font-size: 12px;
+  padding: 0;
+  position: relative;
+  height: auto;
+}
+/* Libellé critère */
+
+#menu-criteres > ul > li {
+  background-position: 0 10px;
+  background-repeat: no-repeat;
+}
+/* flèche */
+
+#menu-criteres > ul > li > .title {
+  padding-left: 12px;
+  background: url("../img/comptage/menu/arrow.png") no-repeat 0 4px transparent;
+}
+/******************************************************************/
+
+/* ------------------------------------------- */
+
+/* Light box d'édition des valeurs d'une liste */
+
+/* ------------------------------------------- */
+
+#formEditValeurs ul {
+  margin: 0 20px;
+}
+#formEditValeurs li {
+  list-style: disc;
+  position: relative;
+  white-space: nowrap;
+}
+#formEditValeurs .delete {
+  /*float: right;*/
+  position: absolute;
+  right: 0;
+  top: 2px;
+}
+/******************************************************************/
+
+/* -------- */
+
+/* Timeline */
+
+/* -------- */
+
+#timeline {
+  position: absolute;
+  top: -35px;
+  left: 50px;
+  height: 20px;
+  font-size: 18px;
+}
+#timeline li {
+  float: left;
+  margin-right: 20px;
+  list-style: none;
+}
+#timeline li.selected {
+  font-weight: bold;
+}
+#timeline a:hover {
+  color: #969696;
+}
+/******************************************************************/
+
+/* ----------------- */
+
+/* Bloc destinataire */
+
+/* ----------------- */
+
+#destinataire {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    /*padding: 12px;
+    padding-top: 30px;*/
+    background: #e8e8e8;
+    width: 200px;
+    color: #545454;
+    font-size: 14px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px 0 #aaa;
+}
+#destinataire .header {
+    background: #545454;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px;
+    text-align: left;
+    color: #fff;
+}
+#destinataire .content {
+    padding: 15px;
+}
+#destinataire .edit {
+    background: url("../img/comptage/user.png") no-repeat 0 0 transparent;
+    padding-left: 26px;
+    display: inline-block;
+    height: 22px;
+    min-width: 22px;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: bold;
+    color: #05C70A;
+}
+#destinataire .edit:hover {
+    background: url("../img/comptage/userOver.png") no-repeat 0 0 transparent;
+}
+#destinataire .societe {
+    text-align: right;
+    font-weight: bold;
+}
+#destinataire .nom {
+    text-align: right;
+    font-style: italic;
+}
+/******************************************************************/
+
+/* ------------------- */
+
+/* Bloc infos campagne */
+
+/* ------------------- */
+
+#ma-campagne {
+    background: #e8e8e8;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 475px;
+    color: #545454;
+    font-size: 14px;
+    text-align: left;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 #aaa;
+}
+#ma-campagne header {
+    margin-bottom: 7px;
+    border-bottom: 1px dotted #545454;
+    background: #545454;
+    padding: 5px 15px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#ma-campagne .content {
+    padding: 5px 15px;
+}
+#ma-campagne .content div {
+    display: inline-block;
+    vertical-align: top;
+}
+#ma-campagne-caracteristiques {
+    width: 270px;
+    border-right: 1px dotted #545454;
+    margin-right: 10px;
+    font-size: 13px;
+}
+#ma-campagne-caracteristiques div {
+    padding: 2px;
+    margin: 5px 3px 0 0;
+}
+#ma-campagne .type-op, #ma-campagne .type-cible, #ma-campagne .type-donnees {
+    padding-left: 25px;
+}
+#ma-campagne .type-op {
+    background: url("../img/comptage/fichier.png") no-repeat 0 0px transparent;
+}
+#ma-campagne .type-donnees {
+    background: url("../img/comptage/donnees.png") no-repeat 0 0px transparent;
+}
+#ma-campagne .type-cible {
+    background: url("../img/comptage/target.png") no-repeat 0 0px transparent;
+    color: #05BE0A;
+}
+#ma-campagne-resultats-comptage {
+    text-align: center;
+    font-weight: bold;
+    color: #545454;
+    font-size: 14px;
+}
+#ma-campagne-resultats-comptage .badge {
+    background: #05BE0A;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 17px;
+    padding: 9px;
+    margin-bottom: 5px;
+}
+#ma-campagne .infos {
+    text-align: right;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 10px;
+}
+#ma-campagne .infos em {
+    border-bottom: 1px dotted #545454;
+}
+
+/* Edition du libellé de la campagne */
+#ma-campagne-libelle {
+    background: transparent;
+    width: auto;
+    font-family: DendaNewLightRegular;
+    padding: 5px 10px;
+    margin: 0;
+    text-align: left;
+    text-transform: none;
+    font-weight: normal;
+    position: relative;
+    color: #fff;
+}
+#ma-campagne-libelle.editable {
+    background: transparent url("../img/sprites.png") no-repeat right center;
+    background-position: right -214px;
+    cursor: pointer;
+    color: #05C70A;
+}
+#ma-campagne-libelle.editable:hover {
+    background-position: right -180px;
+}
+#ma-campagne-libelle .edit input {
+    background: none;
+    /*color: #949494;*/
+    color: #fff;
+    font-family: DendaNewLightRegular;
+    font-size: 18px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+#ma-campagne-libelle .edit button {
+    background: #545454 url("../img/sprites.png") no-repeat top left;
+    background-position: 0px -300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 28px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: transparent;
+    cursor: pointer;
+}
+#ma-campagne-libelle .edit button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/******************************************************************/
+
+/* ---------- */
+
+/* Bloc cible */
+
+/* ---------- */
+
+/* En-tête cible */
+
+#ma-cible {
+  background: white;
+  font-size: 14px;
+  padding: 0px 20px 20px 20px;
+  text-align: left;
+}
+#ma-cible > header {
+    text-align: center;
+}
+#ma-cible > header > h1 {
+    background: #545454;
+    color: #fff;
+    padding: 8px 8px 8px 12px;
+    margin: 20px auto 10px auto;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+}
+#ma-cible .add {
+  margin-left: 15px;
+}
+#ma-cible p {
+  text-align: center;
+}
+/* Conteneur de cibles */
+
+#ma-cible > div {
+  padding: 5px 15px 1px 0;
+  max-height: 400px;
+  overflow: auto;
+  border-top: 1px dotted #ccc;
+  border-bottom: 1px dotted #ccc;
+}
+/* Cible */
+
+#ma-cible article {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  position: relative;
+  background: #e8e8e8;
+  margin-bottom: 5px;
+  padding: 25px 10px 5px 30px;
+  min-height: 70px;
+}
+#ma-cible article.selected {
+  background: #545454;
+  /*color: #E8E8E8;*/
+  color: #05C70A;
+}
+#ma-cible article .rank {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 25px;
+  color: #545454;
+}
+#ma-cible article.selected .rank {
+    color: #fff;
+}
+#ma-cible article a.edit {
+    color: #545454;
+}
+#ma-cible article a.edit:hover {
+    color: #353535;
+}
+#ma-cible article > .delete {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+
+/* Critère */
+
+#ma-cible .critere {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  background: #fff;
+  color: #000;
+  min-width: 90px;
+  min-height: 50px;
+  padding: 5px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px 0 #aaaaaa;
+}
+.lt-ie9 #ma-cible .critere {
+  filter: progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=135, Strength=5);
+  zoom: 1;
+}
+#ma-cible article.selected .critere {
+    border: 1px solid #05C70A;
+    box-shadow: 0 0 5px 0 #E8E8E8;
+}
+#ma-cible .critere .title {
+  padding-right: 18px;
+  color: #545454;
+  font-weight: bold;
+  border-bottom: 1px dotted #ccc;
+  text-align: center;
+}
+#ma-cible article.selected .critere .title {
+    color: #fff;
+    background: #05C70A;
+}
+#ma-cible .critere .value {
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+#ma-cible .critere .value a {
+  margin-top: 5px;
+  color: #000;
+  background: url("../img/comptage/voir.png") no-repeat 0 2px;
+  padding-left: 15px;
+  transition: 0.5s ease;
+}
+#ma-cible .critere .value a:hover {
+  color: #6e6e6e;
+  text-shadow: #fff 1px 1px 1px;
+}
+#ma-cible .critere .value a.edit {
+  background: url("../img/comptage/edit.png") no-repeat 0 2px;
+}
+#ma-cible .critere .delete {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+/******************************************************************/
+
+/* ------------------ */
+
+/* Validation */
+
+/* ------------------ */
+
+/*#btnSuivant {
+    display: none;
+}*/
+
+/*#etape_valide .loading {
+    font-size: 14px;
+}*/
+
+/******************************************************************/
+
+/* ------------------ */
+
+/* Formulaire contact */
+
+/* ------------------ */
+
+#formContact div,
+#formExtraction div {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  margin: 5px 0 0 0;
+}
+#formContact .label,
+#formExtraction .label {
+  width: 30%;
+  font-weight: bold;
+}
+#formContact .value,
+#formExtraction .value {
+  width: 65%;
+}
+/******************************************************************/
+
+/* ----------------- */
+
+/* Comptage en cours */
+
+/* ----------------- */
+
+#comptage-en-cours {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 15px;
+  padding: 10px;
+}
+#comptage-en-cours .progressbar {
+  background-color: #cccccc;
+  margin: 15px;
+}
+/******************************************************************/
+
+/* ---------- */
+
+/* Extraction */
+
+/* ---------- */
+
+#fichiertype-options,
+#fichiertype-options div {
+  margin: 0 !important;
+}
+.mySortable {
+  list-style-type: none;
+  margin: 0;
+  float: left;
+  margin-right: 10px;
+  background: #eeeeee;
+  padding: 5px;
+  width: 143px;
+  min-height: 50px;
+  border: 1px solid #cccccc;
+}
+.mySortable li {
+  margin: 5px;
+  padding: 5px;
+  font-size: 12px;
+  width: 120px;
+  cursor: pointer;
+}
+#champs-ajoutes {
+  background: #05be0a;
+}
+/******************************************************************/
+
+/* -------------- */
+
+/* Recap campagne */
+
+/* -------------- */
+
+#recap-campagne {
+  padding-top: 0 !important;
+}
+#recap-campagne fieldset > div {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  margin: 5px 0 0 0;
+}
+#recap-campagne .label {
+  width: 30%;
+  font-weight: bold;
+  background: #cccccc;
+}
+#recap-campagne .value {
+  width: 65%;
+}
+#recap-campagne hr {
+  color: #cccccc;
+  background-color: #cccccc;
+  height: 1px;
+  border: 0;
+}
