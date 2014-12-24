@@ -1,8 +1,9 @@
 alias /mylightmvc /var/git/mylightmvc/public
 
 <Directory /var/git/mylightmvc/public>
-	Order deny,allow
-	Allow from all
+	#Order deny,allow
+	#Allow from all
+	Require all granted
 
 	AllowOverride None
 	

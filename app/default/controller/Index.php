@@ -66,4 +66,5 @@ class Default_Controller_Index extends ActionController
 		$url_source = $_SERVER['HTTP_REFERER'];
 		$this->redirect($url_source);
 	}
+
 }
